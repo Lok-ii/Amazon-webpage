@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", "sans-serif";
+}
+
+/* header section */
+
+header{
+    min-width: 500px;
+    background-color: #0F1111;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover{
+    color: #DDDDDD;
+}
+
+nav {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+nav img {
+    margin-top: 10px;
+    width: 128px;
+    height: 70px;
+}
+
+nav a p{
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.deliver {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.deliver span {
+    padding-left: 25px;
+}
+
+nav form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 620px;
+    /* height: 40px; */
+}
+
+nav form select {
+    /* margin: 0; */
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    background-color: #f2f2f3;
+}
+
+nav form input {
+    /* margin: 0; */
+    padding-left: 10px;
+    width: 83%;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    font-family: "Open Sans", "sans-serif";
+}
+
+nav form button {
+    margin: 0;
+    width: 50px;
+    height: 40px;
+    border-radius: 0 4px 4px 0;
+    border: none;
+    background-color: #FEBC69;
+}
+
+nav a span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7.5em;
+    height: 40px;
+    background-color: #232E3D;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.inner-items{
+    display: flex;
+    /* width: 40%; */
+    gap: 15px;
+    align-items: center;
+}
+
+/* Prime day section */
+
+.prime-day{
+    background-image: url(./assets/hero-img.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Shop Now Section */
+
+.shop-now{
+    background-color: #F2F2F3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 515px;
+    overflow: scroll;
+}
+
+.shop-items{
+    max-width: 1280px;
+    height: 415px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    overflow: scroll;
+}
+
+.shop-items::-webkit-scrollbar{
+    display: none;
+}
+
+.shop{
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: 415px;
+    background-color: white;
+    justify-content: center;
+    /* align-items: center; */
+    cursor: pointer;
+    text-align: left;
+    padding: 0 2rem;
+    transition: 0.7s ease-in-out;
+}
+
+@media only screen and (max-width: 660px){
+    .shop{
+        width: 450px;
+    }
+}
+
+/* @media only screen and (max-width: 1200px){
+    .shop-items{
+        overflow-y: scroll;
+    }
+    .shop-items::-webkit-scrollbar{
+        display: none;
+    }
+    
+} */
+
+.shop:hover{
+    transform: scale(1.1);
+  }
+
+.shop h3{
+    margin-bottom: 15px;
+}
+
+.shop a{
+    text-decoration: none;
+    color: blue;
+}
+
+.shop img{
+    width: 100%;
+    height: 280px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.shop:hover a{ 
+    color: #C7511F;
+    text-decoration: underline;
+}
+
+
+/* Footer Section*/
+
+footer{
+    height: 290px;
+}
+
+.backtotop{
+    height: 60px;
+    background-color: #37465B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0; 
+}
+
+.backtotop a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.backtotop a:hover{
+    color: #DDDDDD;
+}
+
+.all-links{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    background-color: #232F3E;
+    font-size: 15px;
+    padding: 15px 0;
+}
+
+.about h4{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.about ul{
+    list-style: none;
+}
+
+.about ul li{
+    padding: 1px 0;
+}
+
+.about ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: lighter;
+}
+
+.about ul li a:hover{
+    text-decoration: underline;
+}
